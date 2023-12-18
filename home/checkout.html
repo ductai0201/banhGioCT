@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="Container">
+        <div class="checkout-Container">
+            <div class="textHeadPage-Checkout">
+                <span class="returnPage">
+                    <img src="/assets/image/Arrow 1.svg" alt="">
+                </span>
+                <h2 class="text-headCheckout">Thanh toán</h2>
+            </div>
+
+
+
+            <div class="listProductCart">
+                <div class="productPrimary">
+                    <div class="productImageContainer">
+                        <img src="/assets/image/mon-banh-gio.webp" alt="Bánh giò" />
+                    </div>
+                    <div class="productDetails">
+                        <div class="foodItemContainer">
+                            <h3 class="productName">Bánh Giò</h3>
+                            <span class="priceProduct">20.000 đ</span>
+                        </div>
+                        <span class="totalPriceProductEach">
+                            800.000 đ
+                        </span>
+                        <div class="quantityControls">
+                            <div class="quantityButtons">
+
+                                <button class="quantityIcon decreaseQuantity"
+                                    onclick="changeQuantity('quantityValueOption1', -1)">
+                                    <img src="/assets/image/minus.svg" alt="Decrease quantity" />
+                                </button>
+                                <input type="number" class="quantityInput" id="quantityValueOption1" value="15"
+                                    min="0" />
+                                <button class="quantityIcon increaseQuantity"
+                                    onclick="changeQuantity('quantityValueOption1', 1)">
+                                    <img src="/assets/image/add.svg" alt="Increase quantity" />
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="productPrimary">
+                    <div class="productImageContainer">
+                        <img src="/assets/image/7dbbb38f-90c6-4978-bbf6-0b722603b8f5.png" alt="Giò lụa" />
+                    </div>
+                    <div class="productDetails">
+                        <div class="foodItemContainer">
+                            <h3 class="productName">Giò lụa</h3>
+                            <span class="priceProduct">10.000 đ</span>
+                        </div>
+                        <span class="totalPriceProductEach">
+                            150.000 đ
+                        </span>
+                        <div class="quantityControls">
+                            <div class="quantityButtons">
+
+                                <button class="quantityIcon decreaseQuantity"
+                                    onclick="changeQuantity('quantityValueOption2', -1)">
+                                    <img src="/assets/image/minus.svg" alt="Decrease quantity" />
+                                </button>
+                                <input type="number" class="quantityInput" id="quantityValueOption2" value="15"
+                                    min="0" />
+                                <button class="quantityIcon increaseQuantity"
+                                    onclick="changeQuantity('quantityValueOption2', 1)">
+                                    <img src="/assets/image/add.svg" alt="Increase quantity" />
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="productPrimary">
+                    <div class="productImageContainer">
+                        <img src="/assets/image/7dbbb38f-90c6-4978-bbf6-0b722603b8f5.png" alt="Giò lụa" />
+                    </div>
+                    <div class="productDetails">
+                        <div class="foodItemContainer">
+                            <h3 class="productName">Giò lụa</h3>
+                            <span class="priceProduct">10.000 đ</span>
+                        </div>
+                        <span class="totalPriceProductEach">
+                            150.000 đ
+                        </span>
+                        <div class="quantityControls">
+                            <div class="quantityButtons">
+
+                                <button class="quantityIcon decreaseQuantity"
+                                    onclick="changeQuantity('quantityValueOption3', -1)">
+                                    <img src="/assets/image/minus.svg" alt="Decrease quantity" />
+                                </button>
+                                <input type="number" class="quantityInput" id="quantityValueOption3" value="15"
+                                    min="0" />
+                                <button class="quantityIcon increaseQuantity"
+                                    onclick="changeQuantity('quantityValueOption3', 1)">
+                                    <img src="/assets/image/add.svg" alt="Increase quantity" />
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="totalPriceOrcer">
+                <span class="textTotalPriceOrder">Tổng tiền đơn hàng của bạn</span>
+                <span class="priceTotalPriceOrder">1.200.000 đ</span>
+            </div>
+            <div class="informationMain">
+                <span class="headText-informationMain">Thông tin tổng kho khu vực</span>
+                <div class="informationMain-detail">
+                    <div class="informationMain-detail--name">
+                        <span class="informationMain-detail--nameField">Tên tổng kho:</span>
+                        <span class="informationMain-detail--nameContent">Đại lý Anh Béo</span>
+                    </div>
+                    <div class="informationMain-detail--phone">
+                        <span class="informationMain-detail--nameField">Số điện thoại: </span>
+                        <span class="informationMain-detail--nameContent">0123.456.789</span>
+                    </div>
+                    <div class="informationMain-detail--address">
+                        <span class="informationMain-detail--nameField">Địa chỉ : </span>
+                        <span class="informationMain-detail--nameContent">Lê Đức Thọ, Mĩ Đình 2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="informationMain">
+                <span class="headText-informationMain">Thông tin đại lý ủy quyền</span>
+                <div class="informationMain-detail">
+                    <div class="informationMain-detail--name">
+                        <span class="informationMain-detail--nameField">Tên đại lý: </span>
+                        <span class="informationMain-detail--nameContent">Nguyễn Văn A</span>
+                    </div>
+                    <div class="informationMain-detail--phone">
+                        <span class="informationMain-detail--nameField">Số điện thoại: </span>
+                        <span class="informationMain-detail--nameContent">0123.456.789</span>
+                    </div>
+                    <div class="informationMain-detail--address">
+                        <span class="informationMain-detail--nameField">Địa chỉ : </span>
+                        <span class="informationMain-detail--nameContent">Đại lộ thăng long, Hà Nội</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="paymentPopup">
+                <div class="popup-content">
+                    <div class="headPopupPayment">
+                        <span class="text-headPopupPayment">Mã QR thanh toán</span>
+                        <span class="close" onclick="closePopup()">&times;</span>
+                    </div>
+                    <img src="/assets/image/qr-code.png" alt="QR Code">
+                    <p class="inforPayment">Thông tin chuyển khoản</p>
+                    <p class="childInforPayment">Ngân hàng Agribank</p>
+                    <p class="childInforPayment">2805205154474</p>
+                    <p class="childInforPayment">NGUYEN DANG DUC TAI</p>
+                    <p class="childInforPayment">Nội dung CK: Mã Định Danh</p>
+                </div>
+            </div>
+            <button class="buttonConfirmCheckout" onclick="openPopup()">
+                <span class="textConfirmCheckout">Xác nhận thanh toán</span>
+            </button>
+
+        </div>
+    </div>
+</body>
+<script>
+    function changeQuantity(id, change) {
+        const quantityElement = document.getElementById(id);
+        const currentQuantity = parseInt(quantityElement.value);
+
+        let newQuantity = currentQuantity + change;
+
+        newQuantity = Math.max(newQuantity, 0);
+
+        quantityElement.value = newQuantity;
+    }
+    function openPopup() {
+    const popup = document.getElementById("paymentPopup");
+    popup.style.display = "block";
+
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    const popupContent = popup.querySelector(".popup-content");
+    const newHeight = Math.min(0.8 * windowHeight, 451); 
+    popupContent.style.height = newHeight + "px";
+}
+
+
+function closePopup() {
+    document.getElementById("paymentPopup").style.display = "none";
+}
+</script>
+
+</html>

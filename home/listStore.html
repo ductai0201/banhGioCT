@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="Container">
+        <div class="listStorePage-Container">
+            <div class="findStoreInput">
+                <span class="iconSearchInput"><img src="/assets/image/search-normal.svg" alt="" /></span>
+                <input class="inputTextSearch" type="text" placeholder="Tìm kiếm..." />
+                <span class="iconSettingInput" onclick="toggleListAreas()"><img src="/assets/image/setting-4.svg" alt="" /></span>
+                <div class="listAreas" id="listAreas">
+                    <a href="#">Mỹ Đình</a>
+                    <a href="#">Cầu Giấy</a>
+                    <a href="#">Đống Đa</a>
+                    <a href="#">Thanh Xuân</a>
+                    <a href="#">Hồ Tây</a>
+                    <a href="#">Long Biên</a>
+                </div>
+            </div>
+            <div class="listStore">
+                <div class="storeItem">
+                    <img class="storeImage" src="/assets/image/restaurant.png" alt="Store Image" />
+                    <div class="storeInfo">
+                        <div class="logoStore">
+                            <img class="storeLogo" src="/assets/image/1702443626_logo2.png" alt="Store Logo" />
+                        </div>
+                        <div class="storeDetails">
+                            <h2 class="storeName">Tổng kho Anh Béo</h2>
+                            <span class="storeAddress">Lê Đức Thọ, Mĩ Đình 2, Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="storeItem">
+                    <img class="storeImage" src="/assets/image/restaurant.png" alt="Store Image" />
+                    <div class="storeInfo">
+                        <div class="logoStore">
+                            <img class="storeLogo" src="/assets/image/1702443626_logo2.png" alt="Store Logo" />
+                        </div>
+                        <div class="storeDetails">
+                            <h2 class="storeName">Tổng kho Anh Béo</h2>
+                            <span class="storeAddress">Lê Đức Thọ, Mĩ Đình 2, Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="storeItem">
+                    <img class="storeImage" src="/assets/image/restaurant.png" alt="Store Image" />
+                    <div class="storeInfo">
+                        <div class="logoStore">
+                            <img class="storeLogo" src="/assets/image/1702443626_logo2.png" alt="Store Logo" />
+                        </div>
+                        <div class="storeDetails">
+                            <h2 class="storeName">Tổng kho Anh Béo</h2>
+                            <span class="storeAddress">Lê Đức Thọ, Mĩ Đình 2, Hà Nội</span>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+        <nav class="bottomNav">
+            <a href="#" class="navIcon" onclick="toggleIcon(this, event)">
+                <img class="coloredIcon" src="/assets/image/storefront.svg" alt="Các cửa hàng" />
+                <img class="grayscaleIcon hidden" src="/assets/image/storefrontcolor.svg" alt="Các cửa hàng" />
+            </a>
+            <a href="#" class="navIcon" onclick="toggleIcon(this, event)">
+                <img class="coloredIcon" src="/assets/image/Bag 2.svg" alt="Danh sách đặt hàng" />
+                <img class="grayscaleIcon hidden" src="/assets/image/Bag 2color.svg" alt="Danh sách đặt hàng" />
+            </a>
+            <a href="#" class="navIcon" onclick="toggleIcon(this, event)">
+                <img class="coloredIcon" src="/assets/image/Home.svg" alt="Trang chủ" />
+                <img class="grayscaleIcon hidden" src="/assets/image/Homecolor.svg" alt="Trang chủ" />
+            </a>
+            <a href="#" class="navIcon" onclick="toggleIcon(this, event)">
+                <img class="coloredIcon" src="/assets/image/published_with_changes.svg" alt="Lịch sử đơn hoàn" />
+                <img class="grayscaleIcon hidden" src="/assets/image/published_with_changescolor.svg"
+                    alt="Lịch sử đơn hoàn" />
+            </a>
+            <a href="#" class="navIcon" onclick="toggleIcon(this, event)">
+                <img class="coloredIcon" src="/assets/image/profile.svg" alt="Thông tin cá nhân" />
+                <img class="grayscaleIcon hidden" src="/assets/image/profilecolor.svg" alt="Thông tin cá nhân" />
+            </a>
+        </nav>
+    </div>
+</body>
+<script>
+    function toggleListAreas() {
+            const listAreas = document.getElementById("listAreas");
+            listAreas.classList.toggle("show");
+        }
+        function toggleIcon(iconElement, event) {
+        event.preventDefault();
+        iconElement.querySelector(".coloredIcon").classList.toggle("hidden");
+        iconElement.querySelector(".grayscaleIcon").classList.toggle("hidden");
+    }
+</script>
+</html>
